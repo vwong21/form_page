@@ -11,6 +11,7 @@
 
 /* Page Layout */
 body {
+    height: 100vh;
     font-family: sofia;
     background-color: var(--primary-color);
     margin: 0;
@@ -25,6 +26,10 @@ main {
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
     font-size: 18px;
     padding: 2rem;
     background-color: var(--secondary-color);
@@ -38,10 +43,7 @@ form {
 
 h2 {
     text-align: center;
-}
-
-.container {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
 }
 
 .text-container input {
@@ -55,12 +57,6 @@ h2 {
 
 .text-container input:focus {
     outline-color: var(--accent-color);
-}
-
-#prefix-container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
 }
 
 #class-container {
@@ -83,6 +79,12 @@ h2 {
     outline-color: var(--accent-color)
 }
 
+#submit-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.75em;
+}
+
 #submit {
     font-size: 1rem;
     background-color: var(--accent-color);
@@ -92,6 +94,7 @@ h2 {
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 #submit:hover {
@@ -105,28 +108,16 @@ h2 {
     color: black    ;
 }
 
-@media screen and (max-width: 1500px){
+@media screen and (max-height: 770px) {
     main {
         height: auto;
+        background-color: var(--secondary-color);
     }
-}
 
-@media screen and (max-width: 600px) {
-    main {
-        height: auto;
-    }
-    
     form {
-        width: 100%;
-        max-width: 1000px;
-        height: 100%;
-    }
-
-    h2 {
-        margin-top: 30px;
-    }
-
-    #submit {
-        margin-bottom: 30px;
+        height: auto;
+        border: none;
+        box-shadow: none;
     }
 }
+
