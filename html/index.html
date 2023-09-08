@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 06 | Vincent Wong</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <form action="assignment06.php" method="post">
+            <h2>Login</h2>
+            <div class="container text-container" id="firstname-container">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name">
+            </div>
+            <div class="container text-container" id="lastname-container">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+            </div>
+            <div class="container text-container" id="stuid-container">
+                <label for="studentnumber">Student Number</label>
+                <input type="text" id="studentnumber" name="studentnumber" placeholder="A0nnnnnnn">
+            </div>
+            <div class="container" id="prefix-container">
+                <div class="radio-container">
+                    <label for="mr">Mr.</label>
+                    <input type="radio" id="mr" name="prefix" value="mr">
+                </div>
+
+                <div class="radio-container">
+                    <label for="mrs">Mrs.</label>
+                    <input type="radio" id="mrs" name="prefix" value="mrs">
+                </div>
+
+                <div class="radio-container">
+                    <label for="ms">Ms.</label>
+                    <input type="radio" id="ms" name="prefix" value="ms">
+                </div>
+
+                <div class="radio-container">
+                    <label for="dr">Dr.</label>
+                    <input type="radio" id="dr" name="prefix" value="dr">
+                </div>
+
+                <div class="radio-container">
+                    <label for="na">N/A</label>
+                    <input type="radio" id="na" name="prefix" value="na">
+                </div>
+            </div>
+            <div class="container" id="class-container">
+                <div class="option-container">
+                    <label for="comp1409">COMP1409</label>
+                    <input type="checkbox" id="comp1409" name="courses" value="comp1409">
+                </div>
+                <div class="option-container">
+                    <label for="comp1630">COMP1630</label>
+                    <input type="checkbox" id="comp1630" name="courses" value="comp1630">
+                </div>
+                <div class=" option-container">
+                    <label for="comp1850">COMP1850</label>
+                    <input type="checkbox" id="comp1850" name="courses" value="comp1850">
+                </div>
+                <div class="option-container">
+                    <label for="comp2132">COMP2132</label>
+                    <input type="checkbox" id="comp2132" name="courses" value="comp2132">
+                </div>
+                <div class="option-container">
+                    <label for="comp2913">COMP2913</label>
+                    <input type="checkbox" id="2913" name="courses" value="2913">
+                </div>
+                <div class="option-container">
+                    <label for="comp3015">COMP3015</label>
+                    <input type="checkbox" id="comp3015" name="courses" value="comp3015">
+                </div>
+            </div>
+            <div class="container">
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Text..."></textarea>
+            </div>
+            <div class="container">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
