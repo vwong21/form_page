@@ -1,0 +1,132 @@
+@font-face {
+    font-family: sofia;
+    src: url(../fonts/sofiapro-light.otf);
+}
+
+:root {
+    --primary-color: #D6E4E5;
+    --secondary-color: #EFF5F5;
+    --accent-color: #EB6440;
+}
+
+/* Page Layout */
+body {
+    font-family: sofia;
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+/* content*/
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    font-size: 18px;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    margin-bottom: 1.5rem;
+}
+
+.text-container input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+}
+
+.text-container input:focus {
+    outline-color: var(--accent-color);
+}
+
+#prefix-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+#class-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.75rem;
+    justify-items: center;
+}
+
+#comments {
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    resize: none;
+}
+
+#comments:focus {
+    outline-color: var(--accent-color)
+}
+
+#submit {
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    width: 50%;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    transition-duration: 0.2s;
+    box-shadow: 0 0 20px rgba(235, 100, 64, 0.5);
+}
+
+#submit:active {
+    background-color: white;
+    border: 1px solid #eeeeee;
+    color: black    ;
+}
+
+@media screen and (max-width: 1500px){
+    main {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        height: auto;
+    }
+    
+    form {
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+    }
+
+    h2 {
+        margin-top: 30px;
+    }
+
+    #submit {
+        margin-bottom: 30px;
+    }
+}
