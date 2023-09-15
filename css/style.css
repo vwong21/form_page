@@ -108,6 +108,13 @@ h2 {
     color: black    ;
 }
 
+.error-message {
+    position: absolute;
+    margin: 0;
+    font-size: 0.75em;
+    color: #cc0000;
+}
+
 @media screen and (max-height: 770px) {
     main {
         height: auto;
